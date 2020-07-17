@@ -1,0 +1,243 @@
+﻿
+<%@ Master Language="C#" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link rel="Stylesheet" type="text/css" />
+    <style type="text/css">
+        #heading
+        {
+            height: 4px;
+            width: 377px;
+        }
+        #tbl
+        {
+            height: 1369px;
+        }
+        .style1
+        {
+            width: 100%;
+            height: 1137px;
+            background-color: #F4D7C1;
+        }
+        .style3
+        {
+            width: 1030px;
+        }
+        .style9
+        {
+            height: 1201px;
+            color: #6699FF;
+        }
+        .style10
+        {
+            width: 100%;
+            height: 1226px;
+            background-color: #FFFFFF;
+        }
+        .style12
+        {
+            height: 28px;
+            text-align: justify;
+        }
+        .style13
+        {
+        }
+        .style14
+        {
+            width: 155px;
+        }
+        #menu
+        {
+            width: 207px;
+            height: 582px;
+            font-weight: 700;
+            text-align: center;
+        }
+        #logo
+        {
+            background-color: #FFFF99;
+            text-align: center;
+            color: #99CC00;
+        }
+        .style16
+        {
+            color: #000000;
+            font-family: "Rockwell Condensed";
+            font-size: xx-large;
+        }
+        </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 1575px"> 
+    <div id="logo" style="color: #000000">
+           
+                &nbsp;
+                
+                <br />
+               
+             
+                <asp:Image ID="Image9" runat="server" Height="182px" 
+                    ImageUrl="~/Images/marq1.jpg" Width="225px" />
+                <asp:Image ID="Image10" runat="server" Height="182px" 
+                    ImageUrl="~/Images/marq2.jpg" Width="225px" />
+                <asp:Image ID="Image11" runat="server" Height="182px" 
+                    ImageUrl="~/Images/marq3.jpg" Width="225px" />
+                <asp:Image ID="Image12" runat="server" Height="182px" 
+                    ImageUrl="~/Images/marq4.jpg" Width="225px" />
+                <asp:Image ID="Image13" runat="server" Height="182px" 
+                    ImageUrl="~/Images/marq5.jpg" Width="225px" />
+                    
+                <h3 class="style16">SHOP TO PLAY</h3>
+                
+                
+
+           
+                </div>
+
+       
+  
+  <div id="tbl">
+      <table class="style1">
+          <tr>
+              <td bgcolor="#99CCFF">
+                  &nbsp;</td>
+              <td class="style3" rowspan="2" valign="top">
+                  <table class="style10">
+                      <tr>
+                          <td align="right" class="style12" valign="top" colspan="2">
+                              <h4>
+
+                                  <br />
+
+                                  <asp:HyperLink ID="homelink" runat="server" 
+                                      
+                                      
+                                      
+                                      
+                                      style="text-align: center; color: #000000; font-family: Rockwell; font-size: large;" NavigateUrl="~/HomePage.aspx" 
+                                      >HOME</asp:HyperLink>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  
+                              
+                                  <asp:HyperLink ID="aboutuslink" runat="server" 
+                                      
+                                      
+                                      
+                                      style="text-decoration: underline; color: #000000; font-family: Rockwell; font-size: medium;" NavigateUrl="~/AboutUs.aspx" 
+                                      >ABOUT US</asp:HyperLink>
+                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/LoginPage.aspx" 
+                                      
+                                      
+                                      style="text-decoration: underline; font-family: Rockwell; color: #000000; ">LOGIN</asp:HyperLink>
+                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <asp:Label ID="Username" runat="server" 
+                                      style="text-decoration: underline; font-family: Rockwell; color: #000000; "></asp:Label>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <asp:ImageButton ID="addtocart" runat="server" Height="51px" 
+                                      ImageUrl="~/Images/atc3.jpg" Width="107px" 
+                                      PostBackUrl="~/MyCartPage.aspx" onclick="addtocart_Click" 
+                                      CausesValidation="False" ToolTip="VIEW MY CART" BorderStyle="Ridge" />
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <br />
+                              </h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style14" valign="top">
+                                    
+                                    
+                                       <div id="menu">
+                                       
+                                           <br />
+                                       
+                                           <asp:HyperLink ID="NavigatHyprlink" runat="server" Font-Bold="True" Font-Size="15pt" 
+                                               ForeColor="Black" BackColor="#FFFF99" BorderStyle="Double" Width="144px" 
+                                               Height="27px" style="font-family: 'Rockwell Condensed'; ">CATEGORIES</asp:HyperLink>
+                                           <br />
+                                           <br />
+                                           <asp:Image ID="Image3" runat="server" Height="55px" 
+                                               ImageUrl="~/Images/cricimg1.jpg" Width="54px" />
+&nbsp;
+                                           <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                                               style="font-family: Rockwell; color: #000000;" CausesValidation="False">Cricket</asp:LinkButton>
+                                           <br />
+                                           -------------------------------<br />
+                                           <asp:Image ID="Image4" runat="server" Height="52px" 
+                                               ImageUrl="~/Images/Basket_Ball.jpg" style="margin-bottom: 0px" 
+                                               Width="58px" />
+                                           <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click" 
+                                               style="font-family: Rockwell; color: #000000;" CausesValidation="False">BasketBall</asp:LinkButton>
+                                           <br />
+                                           -----------------------------<br />
+                                           <asp:Image ID="Image5" runat="server" Height="58px" 
+                                               ImageUrl="~/Images/Foot_Ball.jpg" Width="73px" />
+&nbsp;<asp:LinkButton ID="LinkButton3" runat="server" onclick="LinkButton3_Click" 
+                                               style="font-family: Rockwell; color: #000000;" CausesValidation="False">FootBall</asp:LinkButton>
+                                           <br />
+                                           -----------------------------<br />
+                                           <asp:Image ID="Image6" runat="server" Height="47px" 
+                                               ImageUrl="~/Images/Vollly_Ball.jpg" Width="66px" 
+                                               style="margin-left: 1px" />
+&nbsp;<asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click" 
+                                               style="font-family: Rockwell; color: #000000;" CausesValidation="False">VolleyBall</asp:LinkButton>
+                                           <br />
+                                           -----------------------------<br />
+                                           <asp:Image ID="Image7" runat="server" Height="52px" 
+                                               ImageUrl="~/Images/Skates.jpg" Width="67px" />
+                                           <asp:LinkButton ID="LinkButton5" runat="server" onclick="LinkButton5_Click" 
+                                               style="font-family: Rockwell; color: #000000;" CausesValidation="False">Skates</asp:LinkButton>
+                                           <br />
+                                           -----------------------------<br />
+                                           <asp:Image ID="Image8" runat="server" Height="49px" ImageUrl="~/Images/rk2.jpg" 
+                                               Width="63px" />
+                                           <asp:LinkButton ID="LinkButton6" runat="server" onclick="LinkButton6_Click" 
+                                               style="font-family: Rockwell; color: #000000;" CausesValidation="False">Racquets</asp:LinkButton>
+                                        </div> 
+                                       </td>
+                                    <td class="style13" valign="top">
+                                    
+                                    
+                                    
+                                    <div id="search" align="left" style="width: 705px">
+                                       </div>
+                                    <div id="content">
+                                        <asp:ContentPlaceHolder ID="maincontent" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                       </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td bgcolor="#99CCFF">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="style9" bgcolor="#99CCFF">
+                        </td>
+                        <td class="style9" bgcolor="#99CCFF">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#99CCFF">
+                            </td>
+                        <td align="center" class="style3" valign="top" bgcolor="#99CCFF">
+                                  <asp:LinkButton ID="LinkButton7" runat="server" ForeColor="Black" 
+                                      PostBackUrl="~/Admin/AdminLogin.aspx" 
+                                      style="font-family: Rockwell; font-size: small">Admin</asp:LinkButton>
+                            <br />
+                            Copyright © 2016.All right reserved</td>
+                        <td bgcolor="#99CCFF">
+                            </td>
+                    </tr>
+                </table>
+  </div>
+    </div>
+    </form>
+</body>
+</html>
